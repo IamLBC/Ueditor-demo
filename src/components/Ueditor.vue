@@ -34,7 +34,7 @@
               UE.dom.domUtils.preventDefault(e)
               return false
             }
-            self.IE11scroll(e.target)
+            if (e.target.tagName !== 'IMG') self.IE11scroll(e.target)
           })
         }, 1000)
       }
